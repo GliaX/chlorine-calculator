@@ -1,27 +1,14 @@
-# ChlorineCalc
+# Chlorine Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+This is meant to calculate the amount of free chlorine from liquid bleach (sodium hypochlorite) or chlorine pellets and tablets (calcium hypochlorite).
 
-## Development server
+Equations
+=========
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Calcium hypochlorite:
+ * 2 * ppm / 1000 * 142.98 / (35.45 * 2) * 100 / concentration
+ * 2 atoms to make a molecule * ppm / 1000 to get into grams * 142.98 molar mass of Ca(ClO)2 / 35.45 * 100 / concentration in percent
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Sodium hypochlorite:
+ * ppm / 1000 * 100 / concentration
+ * ppm / 1000 mL to get into mL * 100 / concentration
