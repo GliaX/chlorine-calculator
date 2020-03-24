@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SodiumChloriteComponent } from './sodium-chlorite.component';
+import { CalciumHypochloriteComponent } from './calcium-chlorite.component';
 
-describe('SodiumChloriteComponent', () => {
-  let component: SodiumChloriteComponent;
-  let fixture: ComponentFixture<SodiumChloriteComponent>;
+describe('CalciumHypochloriteComponent', () => {
+  let component: CalciumHypochloriteComponent;
+  let fixture: ComponentFixture<CalciumHypochloriteComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SodiumChloriteComponent ]
+      declarations: [ CalciumHypochloriteComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SodiumChloriteComponent);
+    fixture = TestBed.createComponent(CalciumHypochloriteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,40 @@
+<h2>Sodium hypochlorite</h2>
+<p>This calculator tells you how much <b>sodium hypochlorite</b> (bleach) to dilute with water to get your desired concentration (ppm) of chlorine solution.</p>
+
+<mat-card>
+  <form #Form="ngForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Desired Parts Per Million (ppm)</mat-label>
+      <input matInput
+      type="number"
+      name="ppm"
+      [(ngModel)]="ppm"
+      required
+      #ppm2=ngModel>
+      <mat-error *ngIf="ppm2.invalid">
+        Please enter the parts per million (ppm) you want
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Concentration of Sodium hypochlorite solution (%)</mat-label>
+      <input matInput
+      type="number"
+      name="concentration"
+      [(ngModel)]="concentration"
+      required
+      #concentration2=ngModel>
+      <mat-error *ngIf="concentration2.invalid">
+        Please enter the concentration of Sodium hypochlorite solution in percent
+      </mat-error>
+    </mat-form-field>
+    </form>
+  </mat-card>
+
+  <h2 *ngIf="ppm && concentration">
+    Put {{ ppm / 1000 * 100 / concentration | number:'1.1-2'}} millilitres (mL) of {{ concentration }}% Sodium hypochlorite in 1 litre of water to get {{ppm}} ppm
+  </h2>
+
+  <h2 *ngIf="!ppm || !concentration">
+    Please fill out values
+  </h2>

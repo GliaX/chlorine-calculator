@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { SodiumChloriteComponent } from './sodium-chlorite/sodium-chlorite.component'
-import { CalciumChloriteComponent } from './calcium-chlorite/calcium-chlorite.component'
+import { SodiumHypochloriteComponent } from './sodium-hypochlorite/sodium-hypochlorite.component'
+import { CalciumHypochloriteComponent } from './calcium-hypochlorite/calcium-hypochlorite.component'
 
 
 const routes: Routes = [
-  { path: '', component: CalciumChloriteComponent },
-  { path: 'sodium-chlorite', component: SodiumChloriteComponent },
-  { path: 'calcium-chlorite', component: CalciumChloriteComponent },
+  { path: '', component: CalciumHypochloriteComponent },
+  { path: 'sodium-hypochlorite', component: SodiumHypochloriteComponent },
+  { path: 'calcium-hypochlorite', component: CalciumHypochloriteComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

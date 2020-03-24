@@ -18,16 +18,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
-import { CalciumChloriteComponent } from './calcium-chlorite/calcium-chlorite.component';
-import { SodiumChloriteComponent } from './sodium-chlorite/sodium-chlorite.component';
+import { CalciumHypochloriteComponent } from './calcium-hypochlorite/calcium-hypochlorite.component';
+import { SodiumHypochloriteComponent } from './sodium-hypochlorite/sodium-hypochlorite.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CalciumChloriteComponent,
-    SodiumChloriteComponent,
+    CalciumHypochloriteComponent,
+    SodiumHypochloriteComponent,
   ],
   imports: [
 

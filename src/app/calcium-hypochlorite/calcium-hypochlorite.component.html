@@ -8,10 +8,10 @@
       <input matInput
       type="number"
       name="ppm"
-      [ngModel]="calcium?.ppm"
+      [(ngModel)]="ppm"
       required
-      #ppm="ngModel">
-      <mat-error *ngIf="ppm.invalid">
+      #ppm2=ngModel>
+      <mat-error *ngIf="ppm2.invalid">
         Please enter the parts per million (ppm) you want
       </mat-error>
     </mat-form-field>
@@ -21,18 +21,20 @@
       <input matInput
       type="number"
       name="concentration"
-      [ngModel]="calcium?.concentration"
+      [(ngModel)]="concentration"
       required
-      #concentration="ngModel">
-      <mat-error *ngIf="concentration.invalid">
+      #concentration2=ngModel>
+      <mat-error *ngIf="concentration2.invalid">
         Please enter the concentration of Calcium hypochlorite pellets in percent
       </mat-error>
     </mat-form-field>
-    <button
-      mat-raised-button
-      color = "primary"
-      type="submit">submit</button>
     </form>
   </mat-card>
 
-{{ calcium?.ppm }}
+  <h2 *ngIf="ppm && concentration">
+    Put {{ 2 * ppm / 1000 * 142.98 / (35.45 * 2) * 100 / concentration | number:'1.1-2'}} grams of {{ concentration }}% Calcium hypochlorite in 1 litre of water to get {{ppm}} ppm
+  </h2>
+
+  <h2 *ngIf="!ppm || !concentration">
+    Please fill out values
+  </h2>
