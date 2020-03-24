@@ -2,7 +2,7 @@
 <p>This calculator tells you how much <b>calcium hypochlorite</b> to dilute with water to get your desired concentration (ppm) of chlorine solution.</p>
 
 <mat-card>
-  <form (submit)="onCalciumCalculate(calciumForm)" #calciumForm="ngForm">
+  <form #Form="ngForm">
     <mat-form-field appearance="fill">
       <mat-label>Desired Parts Per Million (ppm)</mat-label>
       <input matInput
