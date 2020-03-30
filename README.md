@@ -12,3 +12,7 @@ Equations
 * Sodium hypochlorite:
  * ppm / 1000 * 100 / concentration
  * ppm / 1000 mL to get into mL * 100 / concentration
+
+Deploy for github pages
+=======================
+`ng build --prod --output-path docs --base-href /chlorine-calculator/`
