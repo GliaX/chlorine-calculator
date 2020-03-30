@@ -32,7 +32,7 @@
   </mat-card>
 
   <h2 *ngIf="ppm && concentration">
-    Put {{ 2 * ppm / 1000 * 142.98 / (35.45 * 2) * 100 / concentration | number:'1.1-2'}} grams of {{ concentration }}% Calcium hypochlorite in 1 litre of water to get {{ppm}} ppm
+    Put {{ ppm / 1000 * 142.98 / (35.45 * 2) * 100 / concentration | number:'1.1-2'}} grams of {{ concentration }}% Calcium hypochlorite in 1 litre of water to get {{ppm}} ppm
   </h2>
 
   <h2 *ngIf="!ppm || !concentration">

@@ -6,8 +6,8 @@ Equations
 =========
 
 * Calcium hypochlorite:
- * 2 * ppm / 1000 * 142.98 / (35.45 * 2) * 100 / concentration
- * 2 atoms to make a molecule * ppm / 1000 to get into grams * 142.98 molar mass of Ca(ClO)2 / 35.45 * 100 / concentration in percent
+ * ppm / 1000 * 142.98 / (35.45 * 2) * 100 / concentration
+ * ppm / 1000 to get into grams * 142.98 molar mass of Ca(ClO)2 / (35.45 * 2) molar mass of 2(Cl) * 100 / concentration in percent
 
 * Sodium hypochlorite:
  * ppm / 1000 * 100 / concentration
