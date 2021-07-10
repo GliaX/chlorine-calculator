@@ -15,4 +15,4 @@ Equations
 
 Deploy for github pages
 =======================
-`ng build --prod --output-path docs --base-href /chlorine-calculator/`
+`ng build --configuration production --output-path docs --base-href /chlorine-calculator/`
